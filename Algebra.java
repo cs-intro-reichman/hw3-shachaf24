@@ -96,21 +96,18 @@ public class Algebra {
 			System.out.println( " X divide by zero");
 			return 0; // when the number is 0. 
 		}
-	
-		int zero = 0;
 
-        //when the x1 is negative 
-		while (x1 < zero) {
-		    x1++; 	
+
+		while (x1 < 0) {
+			x1++;
 		}
-        //when x1 is bigger 
+
 		while (x1 >= x2) {
-			x1--;
+			x1 = minus(x1, x2);
 		}
-
-        return x1; 
+		return x1;		
 	}
-
+	
 
 	// Returns the integer part of sqrt(x) 
 	public static int sqrt(int x) {
