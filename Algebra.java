@@ -80,33 +80,14 @@ public class Algebra {
 
 	// Returns the integer part of x1 / x2 
 	public static int div(int x1, int x2) {
-		if (x2 == 0) {
-			System.out.println( " X divide by zero");
-			return 0 ; // when the number is 0. 
+		int pecuNum = 0 ;
+		while (x1 >= x2) {
+			x1 = minus(x1, x2);
+			pecuNum++;
 		}
-
-		int value = 0;
-		int zero = 0;
-
-		while (x1 < zero) {
-			x1++;
-			value--;
-		}
+		return pecuNum;
+	}
 		
-		while (x2<zero) {
-			x2++;
-			value--;
-	
-		}
-
-			while (x1 >= x2) {
-				x1--;
-				value++;
-			}
-
-
-			return value++;
-		}
 
 
 	// Returns x1 % x2
@@ -118,11 +99,11 @@ public class Algebra {
 	
 		int zero = 0;
 
- 
+        //when the x1 is negative 
 		while (x1 < zero) {
 		    x1++; 	
 		}
-
+        //when x1 is bigger 
 		while (x1 >= x2) {
 			x1--;
 		}
