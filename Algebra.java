@@ -81,33 +81,55 @@ public class Algebra {
 	// Returns the integer part of x1 / x2 
 	public static int div(int x1, int x2) {
 		if (x2 == 0) {
-			System.out.println( "cannot divide by zero");
+			System.out.println( " X divide by zero");
 			return 0 ; // when the number is 0. 
 		}
 
 		int value = 0;
 		int zero = 0;
 
-		while (x1 >= x2) {
-			int divisor = x2 ;
-
-
-			while (divisor != 0 ) {
-				divisor--;
-				x1--;
-			}
-
-			value++;
+		while (x1 < zero) {
+			x1++;
+			value--;
+		}
+		
+		while (x2<zero) {
+			x2++;
+			value--;
+	
 		}
 
-		return value; 
-	}
+			while (x1 >= x2) {
+				x1--;
+				value++;
+			}
+
+
+			return value++;
+		}
+
 
 	// Returns x1 % x2
 	public static int mod(int x1, int x2) {
-		
-		return 0;
-	}	
+		if (x2 == 0) {
+			System.out.println( " X divide by zero");
+			return 0; // when the number is 0. 
+		}
+	
+		int zero = 0;
+
+ 
+		while (x1 < zero) {
+		    x1++; 	
+		}
+
+		while (x1 >= x2) {
+			x1--;
+		}
+
+        return x1; 
+	}
+
 
 	// Returns the integer part of sqrt(x) 
 	public static int sqrt(int x) {
